@@ -1,0 +1,20 @@
+[project]
+name = "playpilot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tins.joseph", email = "tins.joseph@gapblue.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pytest-playwright>=0.7.2",
+    "typer>=0.12.0",
+]
+
+[project.scripts]
+playpilot = "playpilot:main"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
