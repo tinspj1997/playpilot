@@ -46,7 +46,3 @@ async def fetch_page_source(url: str, output_file: str = "page_source.txt") -> s
             return ""
         finally:
             await browser.close()
-
-if __name__ == "__main__":
-    target = "https://studio4.gnie.ai:7062/"
-    asyncio.run(fetch_page_source(target))
